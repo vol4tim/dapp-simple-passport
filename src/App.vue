@@ -1,28 +1,15 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <Wrapp>
+    <router-view />
+  </Wrapp>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Wrapp from "./components/layout/Wrapp";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Wrapp
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
